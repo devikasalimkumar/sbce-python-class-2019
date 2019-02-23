@@ -1,0 +1,17 @@
+from flask import Flask
+
+app=Flask(__name__)
+@app.route("/")
+def index() :
+    return "hello dear...\n how you? "
+
+@app.route("/home")
+def home() :
+    return "my home page"
+
+@app.route("/contact") 
+def contact() :
+    return "my contact page..."
+
+if (__name__=="__main__"):
+    app.run()
