@@ -3,7 +3,7 @@ from flask import Flask
 app=Flask(__name__)
 @app.route("/")
 def index() :
-    return "hello dear...\n how you? "
+    return "<h1>hello dear...how you? </h1>"
 
 @app.route("/home")
 def home() :
@@ -11,7 +11,7 @@ def home() :
 
 @app.route("/contact") 
 def contact() :
-    return "my contact page..."
+    return "my contact ..."
 
 if (__name__=="__main__"):
-    app.run()
+    app.run(debug =True)
